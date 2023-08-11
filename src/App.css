@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
-}
+/* --===============GOOGLE FONTS==============-- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* --========VARIABLE CSS===========-- */
+:root {
+  --header-height: 3rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  /* --=============COLORS============-- */
+  /* Color mode HSL(hue, saturation, lightness) */
+
+  --hue: 0;
+  --sat: 0%;
+  --title-color: #333333;
+  --title-color-dark: #000000;
+  --text-color: #757575;
+  --body-color: #fafafa;
+  --container-color: #ffffFF;
+
+  /* --=======FONT AND TYPOGRAPHY=======-- */
+  --body-font: "Poppins", sans-serif;
+
+  /* 0.5rem=8px |  1rem=16px */
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --big-font-size: 3.5rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /* --===========FONT WEIGHT============-- */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+
+  /* --===========MARGENES BOTTOM=========-- */
+  /* 0.5rem=8px |  1rem=16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* --=========Z-Index========-- */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+  /* --========RESPONSIVE TYPOGRAPHY=======- */
+  @media screen and (max-width: 900px) {
+    :root {
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1rem;
+      --big-font-size: 2.75rem;
+      --normal-font-size: 0.938rem;
+      --small-font-size: 0.813rem;
+      --smaller-font-size: 0.75rem;
+    }
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* --=========BASE==========-- */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+
+  html {
+    scroll-behavior: smooth;
   }
+
+  body,
+  button,
+  input,
+  textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+  }
+
+  body{
+    background-color: var(--body-color);
+    color: var(--text-color);
+  }
+/* time 8:10 */
+  /* --=========REUSABLE CSS CLASSES==========-- */
+
+  /* --=========lAYOUT==========-- */
+
+  /* --=========BUTTONS==========-- */
+
+  /* --=========BREAKPOINTS==========-- */
+  /* FOR LARGE DEVICES */
+  @media screen and (max-width: 992px) {}
+
+  /* FOR MEDIUM DEVICES */
+  @media screen and (max-width: 768px) {}
+
+  /* FOR SMALL DEVICES */
+  @media screen and (max-width: 992px) {}
+
 }
